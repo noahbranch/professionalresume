@@ -187,6 +187,7 @@
                 </div>
             </div>
         </div>
+        <audio id="audio" src="sound.mp3"></audio>
     </body>
     <script>
         $("#hiringQ").focusin(function(){
@@ -218,5 +219,28 @@
             var m = $("#customTweet");
             var x = m;
         });
+        //Hint - Try the konami code
+        var secret = "38384040373937396665";
+    var input = "";
+    var timer;
+    var mode = false;
+    $(document).keyup(function (e) {
+        input += e.which;
+        clearTimeout(timer);
+        timer = setTimeout(function () { input = ""; }, 1000);
+        check_input();
+    });
+    function check_input() {
+        if (input == secret) {
+            var sound = document.getElementById("audio");
+            sound.play();
+            var pic = document.getElementsByClassName("profileImg");
+            var i;
+            for (i = 0; i < pic.length; i++) {
+                pic[i].src = "gif.gif"
+            }
+        }
+    }
+        
     </script>
 </html>
