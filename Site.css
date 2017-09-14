@@ -1,0 +1,350 @@
+hr {
+    margin: 0;
+}
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+ul.menu li {
+    float: left;
+    text-decoration: none;
+}
+
+ul.menu li a.listEl {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.menu li a:hover:not(.active):not(#stanley):not(#profileImg) {
+    border-bottom: 2px #2af solid;
+    color: #2af;
+}
+
+ul.menu li a.active {
+    border-bottom: 2px #2af solid;
+    color: #2af;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #e6ecf0;
+}
+#headBar {
+    background-color: white;
+}
+
+#searchBar {
+    width: 100%;
+    border-radius: 60px;
+    border: .5px #f3f3f3 solid;
+    padding: 5px 5px 5px 25px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    z-index: 5;
+}
+
+#search {
+    position: relative;
+    width: 190px;
+    height: 30px;
+}
+
+#searchButton {
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+}
+
+#profile {
+    border-radius: 100%;
+    margin: 30%;
+}
+
+#profileImg:hover {
+    background-color: transparent;
+}
+
+#emailNoahBtn {
+    background-color: #2af;
+    margin: 15%;
+    width: 100%;
+    border-radius: 50px;
+}
+#emailNoahBtn:hover{
+    background-color: white;
+    color: #2af;
+}
+
+.referenceImg {
+    
+}
+
+#contactButton {
+    border-radius: 50px;
+    height: 20px;
+    position: relative;
+    left: 25%;
+    top: -20px;
+    line-height: 0px;
+    background-color: #fff;
+    color: #2af;
+    cursor: pointer;
+}
+#contactButton:hover{
+    background-color: #2af;
+    color: white;
+}
+
+.card-block {
+}
+
+.card {
+}
+
+
+
+#foxtato {
+    background-image: url(foxtato.jpg);
+    background-size: contain;
+    
+}
+
+#noahCard {
+    height: 100px;
+    background-position: center;
+    background-image: url(foxtato.jpg);
+}
+
+#beanPic {
+    height:100px;
+    border-radius: 100px;
+    position: relative;
+    top:-50px;
+    border: 5px white solid;
+}
+
+#namePart {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#handle {
+    position: relative;
+    right: -100px;
+    top: -100px;
+    overflow: hidden;
+}
+
+#noahBranch {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#twitterHand {
+    font-size: .7rem;
+    position: relative;
+    top: -20px;
+}
+
+.titleBit {
+    position: relative;
+    left: 25px;
+}
+
+#noahText {
+    background-color: transparent;
+    height: 50px;
+}
+
+#stats {
+    height: 75px;
+    background-color: transparent;
+}
+
+.numbersBit {
+    position: relative;
+    top: 25px;
+    color: #2af;
+    font-size: 1.5rem
+}
+
+#statList {
+    
+}
+
+#company {
+    color: darkgray;
+}
+
+#whoto {
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+    margin: 10px;
+}
+
+#stanley {
+    background-color: transparent;
+}
+
+#hiringQ {
+    width: 70%;
+    border-radius: 10px;
+    position: relative;
+    left: 70px;
+    top: -50px;
+    border: 1px lightgrey solid;
+    color: #2af;
+    resize: none;
+    height: 30px;
+}
+
+#skills {
+    margin: 10px;
+}
+
+
+.tweet {
+    background-color: white;
+    padding: 5px;
+    border-bottom: 1px #e5e5e5 solid;
+}
+.tweet:hover {
+    background-color: #f5f8fa;
+}
+
+.profileImg {
+    margin: 15px;
+    border-radius: 100px;
+    width: 40px;
+}
+
+#findOthers {
+    padding-left: 15px;
+    color: #2af;
+    font-size: .8rem;
+    position: relative;
+    padding-top: 
+}
+
+.tweetBody {
+    position: relative;
+    margin:0 70px 0 70px;
+    top: -25px;
+    font-size: .75rem;
+}
+
+.tweetHandleTime {
+    font-weight: 200;
+    color: darkgrey;
+    font-size: .7rem;
+}
+
+.twitterName {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.jobSkills {
+    
+}
+.jobSkills li {
+    list-style: none;
+}
+
+.trend {
+    font-weight: bold;
+    color: #2af;
+}
+.trend:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.info {
+    font-size: .75rem;
+    color: darkgrey;
+    position: relative;
+    top: -20px;
+}
+
+.contactSq {
+    height: 60px;
+    border-bottom: 1px lightgrey solid;
+    margin: 5px;
+}
+
+#tweetBtn {
+}
+
+.twitter-mention-button {
+    margin: 10px;
+}
+
+#bottomText {
+    position: relative;
+    top:-15px;
+    left: 20%;
+    font-size: 1.2rem;
+}
+
+.fa-twitterfa {
+    cursor: pointer;
+}
+
+#text{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,1); /* Black background with opacity */
+    z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#text{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
+}
+}
+#loading {
+    background-color: #e8f5fd;
+    border: 1px lightgrey solid;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#nextJob {
+    top: 10px;
+    position: relative;
+    font-style: italic;
+}
