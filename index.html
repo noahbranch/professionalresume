@@ -17,7 +17,7 @@
         <div id="headBar" class="col-md-12">
         <ul class="menu">
             <li><a class="listEl active" href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-            <li><a class="listEl" href="#"><i class="fa fa-bolt" aria-hidden="true"></i>Moments</a></li>
+            <li><a class="listEl" id="rickRoll" href="#"><i class="fa fa-bolt" aria-hidden="true"></i>Moments</a></li>
             <li><a class="listEl" href="#"><i class="fa fa-bell" aria-hidden="true"></i>Notifications</a></li>
             <li><a class="listEl" href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Messages</a></li>
             <li><a class="listEl" href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
@@ -242,6 +242,15 @@
             }
         }
     }
+      $("#rickRoll").click(function(){
+      var sound = document.getElementById("audio");
+            sound.play();
+            var pic = document.getElementsByClassName("profileImg");
+            var i;
+            for (i = 0; i < pic.length; i++) {
+                pic[i].src = "gif.gif"
+      });
+        
         
     </script>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
