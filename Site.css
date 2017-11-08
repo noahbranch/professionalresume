@@ -94,7 +94,7 @@ body {
     
 }
 
-#contactButton {
+.contactInfo {
     border-radius: 50px;
     height: 20px;
     position: relative;
@@ -104,8 +104,12 @@ body {
     background-color: #fff;
     color: #2af;
     cursor: pointer;
+    border-color: #2af;
+    border-width: .5px;
+    width:150px;
+    height: 20px;
 }
-#contactButton:hover{
+#contactInfo:hover{
     background-color: #2af;
     color: white;
 }
@@ -349,4 +353,8 @@ body {
     top: 10px;
     position: relative;
     font-style: italic;
+}
+.hiddenContactInfo{
+    display: none;
+    position: relative;
 }

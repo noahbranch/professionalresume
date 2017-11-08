@@ -165,19 +165,22 @@
                     <div class="contactSq">
                         <img src="blank.jpg" style="margin: 0 5px 0 5px; width:20%; border-radius: 100%;"><span>Jared McClellan</span><span id="company">@Heartland</span>
                         <div>
-                            <a href="mailto:jmcclellan@heartland.com"><button id="contactButton" type="button" class="btn btn-primary">Contact</button></a>
+                            <button id="jmcclellan@heartland.com" type="button" class="contactInfo">Contact</button>
+                            <p class="hiddenContactInfo">jmcclellan@heartland.com</p>
                         </div>
                     </div>
                     <div class="contactSq">
                         <img src="blank.jpg" style="margin: 0 5px 0 5px; width:20%; border-radius: 100%;"><span>Doug Broom</span><span id="company">@PETRAS</span>
                         <div>
-                            <a href="tel:6182679366"><button id="contactButton" type="button" class="btn btn-primary">Contact</button></a>
+                            <button id="6182679366" type="button" class="contactInfo">Contact</button>
+                            <p class="hiddenContactInfo">618-267-9366</p>
                         </div>
                     </div>
                     <div class="contactSq">
                         <img src="blank.jpg" style="margin: 0 5px 0 5px; width:20%; border-radius: 100%;"><span>Daniel Heffington</span><span id="company">@Personal</span>
                         <div>
-                            <a href="mailto:thegentlemanfromva@gmail.com"><button id="contactButton" type="button" class="btn btn-primary">Contact</button></a>
+                            <button id="thegentlemanfromva@gmail.com" type="button" class="contactInfo">Contact</button>
+                            <p class="hiddenContactInfo">thegentlemanfromva@gmail.com</p>
                         </div>
                     </div>
                     <span id="findOthers"><i class="fa fa-users"></i> More references available on request</span>
@@ -191,6 +194,48 @@
         <audio id="audio" src="sound.mp3"></audio>
     </body>
     <script>
+            var surprise = 0;
+        
+        $(".fa-heart-o").click(function(){
+            surprise++;
+            if(surprise > 10){
+            var sound = document.getElementById("audio");
+            sound.play();
+            var pic = document.getElementsByClassName("profileImg");
+            var i;
+            for (i = 0; i < pic.length; i++) {
+                pic[i].src = "gif.gif"
+      }
+                alert("Thanks for the love!");
+            }
+        });
+        $(".contactInfo").click(function(){
+            if($(this).hasClass("open")){
+                
+            $(this.nextElementSibling).fadeOut().animate({
+                left: '0px',
+                top: '0px',
+                fontSize: '12px'
+            });
+                $(this.parentNode.parentNode).animate({
+                height: '60px'
+            });
+            $(this).removeClass("open");
+            }
+            else{
+                
+                $(this).addClass("open");
+                $(this.parentNode.parentNode).animate({
+                height: '100px'
+            })
+            $(this.nextElementSibling).fadeIn().animate({
+                left: '20px',
+                top: '-10px',
+                fontSize: '1em'
+            });
+            }
+        });
+        
         $("#hiringQ").focusin(function(){
             if(this.value == " Are you hiring?" || this.value == ""){
                 $(this).height(75);
@@ -242,14 +287,6 @@
             }
         }
     }
-      $("#rickRoll").click(function(){
-      var sound = document.getElementById("audio");
-            sound.play();
-            var pic = document.getElementsByClassName("profileImg");
-            var i;
-            for (i = 0; i < pic.length; i++) {
-                pic[i].src = "gif.gif"
-      });
         
         
     </script>
