@@ -84,6 +84,7 @@ body {
     margin: 15%;
     width: 100%;
     border-radius: 50px;
+    cursor: pointer;
 }
 #emailNoahBtn:hover{
     background-color: white;
