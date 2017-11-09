@@ -358,4 +358,37 @@ body {
 .hiddenContactInfo{
     display: none;
     position: relative;
+    font-size: 12px;
+}
+.half-btn {
+    position: relative;
+    width: 75px;
+    cursor: pointer;
+    background-color: #2af;
+    color: white;
+}
+#email-btn{
+    top:-2px;
+    left: 20px;
+    border-bottom-left-radius: .2em;
+    border-top-left-radius: .2em;
+    z-index: 2;
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    margin-bottom: 10px;
+    display: none;
+}
+#tweet-btn{
+    left: 95px;
+    top: -50px;
+    border-bottom-right-radius: .2em;
+    border-top-right-radius: .2em;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-bottom: 10px;
+    display: none;
+}
+.twitter-mention-button{
+    position: absolute !important;
+    left: -1000px !important;
 }

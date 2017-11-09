@@ -75,6 +75,8 @@
             <div class="col-md-6 col-sm-12">
                 <div class="card" style="background-color: #e8f5fd">
                     <img src="bean.jpg" class="profileImg"><textarea placeholder=" Are you hiring?" id="hiringQ"> Are you hiring?</textarea>
+                    <input id="email-btn" class="half-btn btn" type="button" value="Email"/>
+                    <input id="tweet-btn" class="half-btn btn" type="button" value="Tweet" />
                     <span id="customTweet"></span>
                 </div>
                 <div class="tweet">
@@ -238,9 +240,12 @@
         
         $("#hiringQ").focusin(function(){
             if(this.value == " Are you hiring?" || this.value == ""){
-                $(this).height(75);
-                $(".twitter-mention-button").show();
+                $(this).animate({
+                    height: '75px'
+                });
                 this.value = "";
+                $("#email-btn").fadeIn();
+                $("#tweet-btn").fadeIn();
                 var r = $('<a href="https://twitter.com/intent/tweet?screen_name=archimedeshand" class="twitter-mention-button" data-size="large" data-text="'+ this.value +'" data-show-count="false">Tweet to @archimedeshand</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"><script>');
                 $("#customTweet").empty();
                 $("#customTweet").append(r);
@@ -249,9 +254,13 @@
         $("#hiringQ").focusout(function(){
             
             if(this.value == " Are you hiring?" || this.value == ""){
-                $(this).height(30);
+                $(this).animate({
+                    height: '30px'
+                });
                 this.value = " Are you hiring?";
                 $(".twitter-mention-button").hide();
+                $("#email-btn").fadeOut();
+                $("#tweet-btn").fadeOut();
             }
             else{
                 var r = $('<a href="https://twitter.com/intent/tweet?screen_name=archimedeshand" class="twitter-mention-button" data-size="large" data-text="'+ this.value +'" data-show-count="false">Tweet to @archimedeshand</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"><script>');
@@ -260,6 +269,38 @@
                 
             }
         })
+        $("#tweet-btn").mouseover(function(){
+            $(this).animate({
+                zIndex: '3',
+                width: '140px',
+                left: '25px',
+            });
+        });
+        $("#email-btn").mouseover(function(){
+            $(this).animate({
+                width: '145px',
+            });
+        });
+        
+        $("#tweet-btn").mouseout(function(){
+            $(this).animate({
+               width: '75px',
+                zIndex: '1',
+                left: '95px'
+            });
+        });
+        $("#email-btn").mouseout(function(){
+            $(this).animate({
+               width: '75px',
+                borderColor: '#2af',
+                borderRightColor: 'lightgrey'
+            });
+        });
+        
+        $("#tweet-btn").click(function(){
+            $(".twitter-mention-button").trigger("click");
+        });
+        
         $("#hiringQ").keyup(function(){
             
             var m = $("#customTweet");
