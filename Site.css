@@ -366,6 +366,7 @@ body {
     cursor: pointer;
     background-color: #2af;
     color: white;
+    text-decoration: none;
 }
 #email-btn{
     top:-2px;
@@ -388,7 +389,6 @@ body {
     margin-bottom: 10px;
     display: none;
 }
-.twitter-mention-button{
-    position: absolute !important;
-    left: -1000px !important;
+.half-btn:hover{
+    color: white;
 }
