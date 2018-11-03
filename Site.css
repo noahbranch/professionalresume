@@ -124,7 +124,7 @@ body {
 
 
 #foxtato {
-    background-image: url(foxtato.jpg);
+    background-image: url(neat.jpg);
     background-size: contain;
     
 }
@@ -132,7 +132,7 @@ body {
 #noahCard {
     height: 100px;
     background-position: center;
-    background-image: url(foxtato.jpg);
+    background-image: url(neat.jpg);
 }
 
 #beanPic {
