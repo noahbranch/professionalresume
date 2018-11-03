@@ -91,10 +91,6 @@ body {
     color: #2af;
 }
 
-.referenceImg {
-    
-}
-
 .contactInfo {
     border-radius: 50px;
     height: 20px;
@@ -114,13 +110,6 @@ body {
     background-color: #2af;
     color: white;
 }
-
-.card-block {
-}
-
-.card {
-}
-
 
 
 #foxtato {
@@ -188,10 +177,6 @@ body {
     font-size: 1.5rem
 }
 
-#statList {
-    
-}
-
 #company {
     color: darkgray;
 }
@@ -244,7 +229,6 @@ body {
     color: #2af;
     font-size: .8rem;
     position: relative;
-    padding-top: 
 }
 
 .tweetBody {
@@ -265,9 +249,6 @@ body {
     font-size: .8rem;
 }
 
-.jobSkills {
-    
-}
 .jobSkills li {
     list-style: none;
 }
@@ -292,9 +273,6 @@ body {
     height: 60px;
     border-bottom: 1px lightgrey solid;
     margin: 5px;
-}
-
-#tweetBtn {
 }
 
 .twitter-mention-button {
