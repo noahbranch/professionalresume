@@ -1,0 +1,67 @@
+<html>
+<head>
+    <link rel="shortcut icon" type="image/png" href="imgs\noah.jpg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<title>Noah Branch - Book Search Example</title>
+<body>
+  <header>
+    <h1>Google Book Search</h1>
+    <a href="index.html">Return to resume</a>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 bookContainer">
+        <div class="search">
+          <div class="form-row">
+            <input type="text" class="search form-control" placeholder="Search" id="searchQuery" />
+          </div>
+          <div class="container-fluid" id="advancedSearch">
+            <div class="form-row">
+              <input type="text" class="search form-control col-md-6" placeholder="Author" id="authorSearch" />
+              <input type="text" class="search form-control col-md-6" placeholder="Title" id="titleSearch" />
+            </div>
+            <div class="form-row">
+              <input type="text" class="search form-control col-md-6" placeholder="Publisher" id="pubSearch" />
+              <input type="number" class="search form-control col-md-6" placeholder="ISBN" id="isbnSearch" />
+            </div>
+            <div class="form-row">
+              <input type="text" class="search form-control col-md-12" placeholder="Subject" id="subjectSearch" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <button id="advancedOpen" class="btn btn-default" onclick="toggleAdvanced()">Show Advanced Search</button>
+          <button id="search" class="btn btn-primary" onclick="getBooks()">Search</button>
+        </div>
+        <div id="resultsList" class="row">
+        </div>
+        <br>
+        <div class="container" id="endOfResults">
+          <p>For better results, try refining your query or using the advanced search!</p>
+        </div>
+      </div>
+      <div class="col-md-6 bookContainer">
+        <div class="bookInfo">
+          <div id="mainInfo" class="row">
+            <div class="col-md-4"><img id="bookImage">
+            </div>
+            <div class="col-md-8">
+              <h3 id="bookTitle"></h3>
+              <p id="author"></p>
+              <a id="moreInfo" target="_blank" href=""></a>
+            </div>
+          </div>
+          <div id="bookDescription"></div>
+          <br>
+          <p id="publisher"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="toast"></div>
+</body>
+</html>

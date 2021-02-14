@@ -95,6 +95,9 @@ body {
   color: #212529;
   background-color: #f3f3f3;
     max-width: 1200px;
+    align-content: center;
+    margin: 0 auto !important;
+    float: none !important;
 }
 
 [tabindex="-1"]:focus {
