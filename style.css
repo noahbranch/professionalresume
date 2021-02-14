@@ -1,3 +1,8 @@
+html, body {
+    margin: 0; 
+    height: 100%;
+}
+
 header {
     text-align: center;
 }
@@ -17,11 +22,6 @@ header {
 .search {
     width: 100%;
     margin-bottom: 5px !important;
-}
-
-.bookContainer {
-    overflow-y: scroll;
-    height: 75%;
 }
 
 .bookLink {

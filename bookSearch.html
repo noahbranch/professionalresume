@@ -14,29 +14,29 @@
   </header>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6 bookContainer">
-        <div class="search">
+      <div class="search col-md-6">
+        <div class="form-row">
+          <input type="text" class="search form-control" placeholder="Search" id="searchQuery" />
+        </div>
+        <div class="container-fluid" id="advancedSearch">
           <div class="form-row">
-            <input type="text" class="search form-control" placeholder="Search" id="searchQuery" />
+            <input type="text" class="search form-control col-md-6" placeholder="Author" id="authorSearch" />
+            <input type="text" class="search form-control col-md-6" placeholder="Title" id="titleSearch" />
           </div>
-          <div class="container-fluid" id="advancedSearch">
-            <div class="form-row">
-              <input type="text" class="search form-control col-md-6" placeholder="Author" id="authorSearch" />
-              <input type="text" class="search form-control col-md-6" placeholder="Title" id="titleSearch" />
-            </div>
-            <div class="form-row">
-              <input type="text" class="search form-control col-md-6" placeholder="Publisher" id="pubSearch" />
-              <input type="number" class="search form-control col-md-6" placeholder="ISBN" id="isbnSearch" />
-            </div>
-            <div class="form-row">
-              <input type="text" class="search form-control col-md-12" placeholder="Subject" id="subjectSearch" />
-            </div>
+          <div class="form-row">
+            <input type="text" class="search form-control col-md-6" placeholder="Publisher" id="pubSearch" />
+            <input type="number" class="search form-control col-md-6" placeholder="ISBN" id="isbnSearch" />
+          </div>
+          <div class="form-row">
+            <input type="text" class="search form-control col-md-12" placeholder="Subject" id="subjectSearch" />
           </div>
         </div>
-        <div>
-          <button id="advancedOpen" class="btn btn-secondary" onclick="toggleAdvanced()">Show Advanced Search</button>
-          <button id="search" class="btn btn-primary" onclick="getBooks()">Search</button>
-        </div>
+      </div>
+      <div>
+        <button id="advancedOpen" class="btn btn-secondary" onclick="toggleAdvanced()">Show Advanced Search</button>
+        <button id="search" class="btn btn-primary" onclick="getBooks()">Search</button>
+      </div>
+      <div class="col-md-6 bookContainer">
         <div id="resultsList" class="row">
         </div>
         <br>
