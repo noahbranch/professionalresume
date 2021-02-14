@@ -80,10 +80,12 @@
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
-                <div class="card" style="background-color: #e8f5fd">
+                <div class="card" style="background-color: #375a7f">
                     <img src="imgs\noah.jpg" class="profileImg"><textarea placeholder=" Are you hiring?" id="hiringQ"> Are you hiring?</textarea>
-                    <a href="mailto:noah.branch@gmail.com?subject=Found your resume!" id="email-btn" class="half-btn btn">Email</a>
-                    <a href="https://twitter.com/intent/tweet?screen_name=branchliketree" id="tweet-btn" class="half-btn btn">Tweet</a>
+                    <div class="button-box">
+                        <a href="mailto:noah.branch@gmail.com?subject=Found your resume!" id="email-btn" class="half-btn btn">Email</a>
+                        <a href="https://twitter.com/intent/tweet?screen_name=branchliketree" id="tweet-btn" class="half-btn btn">Tweet</a>
+                    </div>
                 </div>
                 <div class="tweet">
                     <img src="imgs\sweet.jpg" class="profileImg"><span class="twitterName">Skills <span class="tweetHandleTime">@numchucks
@@ -319,38 +321,6 @@
         else {
 
         }
-    })
-    $("#tweet-btn").mouseover(function () {
-        $(this).animate({
-            zIndex: '3',
-            width: '140px',
-            left: '25px',
-        });
-    });
-    $("#email-btn").mouseover(function () {
-        $(this).animate({
-            width: '145px',
-        });
-    });
-
-    $("#tweet-btn").mouseout(function () {
-        $(this).animate({
-            width: '75px',
-            zIndex: '1',
-            left: '95px'
-        });
-    });
-    $("#email-btn").mouseout(function () {
-        $(this).animate({
-            width: '75px',
-            borderColor: '#2af',
-            borderRightColor: 'lightgrey'
-        });
-    });
-
-    $("#tweet-btn").click(function () {
-        var x = $(".twitter-mention-button");
-        $(".twitter-mention-button")[0].click();
     });
 
     //Hint - Try the konami code

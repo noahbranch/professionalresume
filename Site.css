@@ -6,7 +6,7 @@ ul.menu {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #303030;
 }
 
 ul.menu li {
@@ -37,7 +37,7 @@ body {
     background-color: #e6ecf0;
 }
 #headBar {
-    background-color: white;
+    background-color: #303030;
 }
 
 #searchBar {
@@ -87,7 +87,7 @@ body {
     cursor: pointer;
 }
 #emailNoahBtn:hover{
-    background-color: white;
+    background-color: #303030;
     color: #2af;
 }
 
@@ -98,7 +98,7 @@ body {
     left: 25%;
     top: -20px;
     line-height: 0px;
-    background-color: #fff;
+    background-color: #303030;
     color: #2af;
     cursor: pointer;
     border-color: #2af;
@@ -111,14 +111,8 @@ body {
     color: white;
 }
 
-
-#foxtato {
-    background-image: url(imgs/neat.jpg);
-    background-size: contain;
-    
-}
-
 #noahCard {
+    border-radius: 0.25rem;
     height: 100px;
     background-position: center;
     background-image: url(imgs/neat.jpg);
@@ -129,7 +123,7 @@ body {
     border-radius: 100px;
     position: relative;
     top:-50px;
-    border: 5px white solid;
+    border: 0.15em white solid;
 }
 
 #namePart {
@@ -142,6 +136,7 @@ body {
     right: -100px;
     top: -100px;
     overflow: hidden;
+    padding-left: .5em;
 }
 
 #noahBranch {
@@ -210,12 +205,12 @@ body {
 
 
 .tweet {
-    background-color: white;
+    background-color: #303030;
     padding: 5px;
     border-bottom: 1px #e5e5e5 solid;
 }
 .tweet:hover {
-    background-color: #f5f8fa;
+    background-color: #444;
 }
 
 .profileImg {
@@ -321,7 +316,7 @@ body {
 }
 }
 #loading {
-    background-color: #e8f5fd;
+    background-color: #375a7f;
     border: 1px lightgrey solid;
     margin: 5px;
     text-align: center;
@@ -338,6 +333,9 @@ body {
     position: relative;
     font-size: 12px;
 }
+.button-box {
+    padding: 1.5rem;
+}
 .half-btn {
     position: relative;
     width: 75px;
@@ -347,8 +345,6 @@ body {
     text-decoration: none;
 }
 #email-btn{
-    top:-2px;
-    left: 20px;
     border-bottom-left-radius: .2em;
     border-top-left-radius: .2em;
     z-index: 2;
@@ -356,17 +352,17 @@ body {
     border-top-right-radius: 0 !important;
     margin-bottom: 10px;
     display: none;
+    background-color: #444;
 }
 #tweet-btn{
-    left: 95px;
-    top: -50px;
     border-bottom-right-radius: .2em;
     border-top-right-radius: .2em;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     margin-bottom: 10px;
     display: none;
+    background-color: #444;
 }
 .half-btn:hover{
-    color: white;
+    color: #888;
 }
