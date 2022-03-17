@@ -36,6 +36,11 @@ body {
     font-family: sans-serif;
     background-color: #e6ecf0;
 }
+
+#midContainer {
+    height: 100%;
+}
+
 #headBar {
     background-color: #303030;
 }
